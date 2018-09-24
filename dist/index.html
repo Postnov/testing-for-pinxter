@@ -24,19 +24,19 @@
           <div class="form__grid-item form-item">
             <label class="form-item__label">
               <div class="form-item__title">Фамилия</div>
-              <input class="form-item__field" type="text">
+              <input class="form-item__field js-form-field" type="text">
             </label>
           </div>
           <div class="form__grid-item form-item">
             <label class="form-item__label">
               <div class="form-item__title">Имя</div>
-              <input class="form-item__field" type="text">
+              <input class="form-item__field js-form-field" type="text">
             </label>
           </div>
           <div class="form__grid-item form-item">
             <label class="form-item__label">
               <div class="form-item__title">Отчество</div>
-              <input class="form-item__field" type="text">
+              <input class="form-item__field js-form-field" type="text">
             </label>
           </div>
           <div class="form__grid-item form-item">
@@ -66,14 +66,19 @@
           </div>
         </div>
         <!--form-bar-->
-        <div class="form__bar js-form-bar bar"></div>
+        <div class="form__bar bar">
+          <div class="bar__line js-form-bar"></div>
+        </div>
         <!--form-bar-set-->
         <div class="form__set-bar form-set-bar">
           <input class="form-set-bar__field js-set-bar-field" type="number">
-          <button class="form-set-bar__btn btn">Применить</button>
-          <div class="form-set-bar__bar js-set-bar bar"></div>
-        </div><a class="btn form__btn-result" href="#">Сохранить</a>
+          <button class="form-set-bar__btn btn js-set-bar-btn" type="button">Применить</button>
+          <div class="form-set-bar__bar bar">
+            <div class="bar__line js-set-bar bar"></div>
+          </div>
+        </div><a class="btn form__btn-result js-form-save" href="https://vk.com/doc204027315_475865159" target="_blank">Кнопка</a>
       </div>
     </div>
   </form>
+  <script src="js/main.js"></script>
 </html>
