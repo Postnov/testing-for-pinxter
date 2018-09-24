@@ -92,6 +92,18 @@
 
     &__field {
         width: 90%;
+        border: 1px solid #eee;
+        padding: 3px 5px;
+        border-radius: 3px;
+
+        &.valid {
+            color: green;
+            border-color: green;
+        }
+        &.invalid {
+            color: red;
+            border-color: red;
+        }
     }
 
     &__title{

@@ -336,7 +336,7 @@ img {
   overflow: hidden;
   border-radius: 30px;
   border: 1px solid #eee; }
-  .bar:after {
+  .bar__line {
     content: '';
     position: absolute;
     top: 0;
@@ -345,12 +345,12 @@ img {
     width: 0;
     height: 100%;
     transition: .3s all; }
-  .bar.yellow:after {
-    background-color: yellow; }
-  .bar.lightgreen:after {
-    background-color: lightgreen; }
-  .bar.darkgreen:after {
-    background-color: green; }
+    .bar__line.yellow {
+      background-color: yellow; }
+    .bar__line.lightgreen {
+      background-color: lightgreen; }
+    .bar__line.green {
+      background-color: green; }
 
 .form {
   width: 100%;
@@ -411,7 +411,16 @@ img {
   position: relative; }
 
 .form-item__field {
-  width: 90%; }
+  width: 90%;
+  border: 1px solid #eee;
+  padding: 3px 5px;
+  border-radius: 3px; }
+  .form-item__field.valid {
+    color: green;
+    border-color: green; }
+  .form-item__field.invalid {
+    color: red;
+    border-color: red; }
 
 .form-item__title {
   font-weight: bold;

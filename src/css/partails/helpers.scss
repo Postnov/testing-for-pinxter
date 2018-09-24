@@ -24,7 +24,7 @@
     border-radius: 30px;
     border: 1px solid #eee;
 
-    &:after {
+    &__line{
         content: '';
         position: absolute;
         top: 0;
@@ -33,15 +33,17 @@
         width: 0;
         height: 100%;
         transition: .3s all;
+
+        &.yellow{
+            background-color: yellow;
+        }
+        &.lightgreen{
+            background-color: lightgreen;
+        }
+        &.green{
+            background-color: green;
+        }
     }
 
-    &.yellow:after{
-        background-color: yellow;
-    }
-    &.lightgreen:after{
-        background-color: lightgreen;
-    }
-    &.darkgreen:after{
-        background-color: green;
-    }
+
 }
