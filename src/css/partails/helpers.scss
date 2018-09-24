@@ -1,0 +1,47 @@
+.btn {
+    color: #3f6fa0;
+    border: 1px solid;
+    padding: 7px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: .3s all;
+    cursor: pointer;
+
+    background-color: #fff;
+    text-decoration: none;
+    outline-color: blue;
+
+    &:hover {
+        background-color: #3f6fa0;
+        color: #fff;
+        border-color: #3f6fa0;
+    }
+}
+
+.bar {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #eee;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 0;
+        height: 100%;
+        transition: .3s all;
+    }
+
+    &.yellow:after{
+        background-color: yellow;
+    }
+    &.lightgreen:after{
+        background-color: lightgreen;
+    }
+    &.darkgreen:after{
+        background-color: green;
+    }
+}
