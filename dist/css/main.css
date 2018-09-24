@@ -302,9 +302,6 @@ body {
   font-size: 16px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
-  @media (max-width: 1170px) {
-    body {
-      font-size: 10px; } }
 
 *, *:after, *:before {
   box-sizing: inherit; }
@@ -318,10 +315,11 @@ img {
 .btn {
   color: #3f6fa0;
   border: 1px solid;
-  padding: 7px 10px;
+  padding: 7px 13px;
   display: inline-block;
   border-radius: 4px;
   transition: .3s all;
+  font-size: 14px;
   cursor: pointer;
   background-color: #fff;
   text-decoration: none;
@@ -364,11 +362,23 @@ img {
   .form__title {
     margin-left: 32%;
     margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      .form__title {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 30px; } }
   .form__important {
     width: 30%;
     margin-right: 2%; }
+    @media (max-width: 979px) {
+      .form__important {
+        width: 80%;
+        margin: 0 auto; } }
   .form__content {
     width: 68%; }
+    @media (max-width: 979px) {
+      .form__content {
+        margin: 40px auto; } }
   .form__grid {
     display: flex;
     align-items: flex-start;
@@ -378,6 +388,12 @@ img {
   .form__grid-item {
     width: 33.333%;
     margin-bottom: 25px; }
+    @media (max-width: 768px) {
+      .form__grid-item {
+        width: 50%; } }
+    @media (max-width: 480px) {
+      .form__grid-item {
+        width: 100%; } }
   .form__bar {
     width: 100%;
     height: 20px;
@@ -452,9 +468,29 @@ img {
   flex-wrap: wrap;
   margin-bottom: 30px; }
   .form-set-bar__field {
-    width: 50px; }
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px; }
+    @media (max-width: 768px) {
+      .form-set-bar__field {
+        width: 200px; } }
+    @media (max-width: 600px) {
+      .form-set-bar__field {
+        width: 50%; } }
+    @media (max-width: 480px) {
+      .form-set-bar__field {
+        width: 100%;
+        margin-bottom: 10px; } }
   .form-set-bar__btn {
     margin: 0 20px; }
+    @media (max-width: 480px) {
+      .form-set-bar__btn {
+        margin: 0; } }
   .form-set-bar__bar {
     flex-grow: 1;
     height: 20px; }
+    @media (max-width: 768px) {
+      .form-set-bar__bar {
+        width: 100%;
+        margin-top: 20px; } }
