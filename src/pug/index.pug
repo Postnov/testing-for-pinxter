@@ -2,3 +2,61 @@ doctype html
 html(lang="ru")
 	include partails/head.pug
 	body
+
+
+	form.form
+		.form__important
+			p.form__important-text.
+				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. За одна повстречался пустился путь рот дал рекламных ipsum залетают сих послушавшись. Залетают одна то, алфавит вопрос заглавных знаках предупредила буквенных lorem подпоясал. Ручеек имеет не возвращайся, оксмокс они домах. Щеке переписывается образ жаренные точках ему встретил. Если журчит буквоград рекламных сих вдали реторический первую точках до, продолжил страну! Одна но за первую однажды рыбного, вдали они проектах, грустный обеспечивает которой это продолжил образ, пустился грамматики она заголовок себя семь? Что курсивных снова переписывается, напоивший дороге жизни толку домах заманивший, однажды запятых сбить заголовок знаках парадигматическая семантика речью, наш он.
+		.form__info.form-info
+			.form-info__title Общая информация
+			//form-grid
+			.form__grid
+				.form__grid-item
+					label.form-item__label
+						.form-item__title Фамилия
+						input.form-item__field(type="text")
+				.form__grid-item
+					label.form-item__label
+						.form-item__title Имя
+						input.form-item__field(type="text")
+				.form__grid-item
+					label.form-item__label
+						.form-item__title Отчество
+						input.form-item__field(type="text")
+				.form__grid-item
+					.form-item__title Меняли фамилию?
+
+					label.form-item__label
+						input.form-item__radio(type="radio")
+						span Да
+
+					label.form-item__label
+						input.form-item__radio(type="radio")
+						span Нет
+				.form__grid-item
+					.form-item__title Пол
+
+					label.form-item__label
+						input.form-item__radio(type="radio")
+						span Муж.
+
+					label.form-item__label
+						input.form-item__radio(type="radio")
+						span Жен.
+
+				.form__grid-item
+					.form-item__title Семейное положение
+					select.form-item__select
+						option.form-item__option Женат/Замужем
+						option.form-item__option Холост(а)
+			//form-bar
+			.form__bar.js-form-bar
+
+			//form-bar-set
+			.form__set-bar.form-set-bar
+				input.form-set-bar__field(type="numberglup")
+				.form-set-bar__btn.btn Применить
+				.form-set-bar__bar.js-form-set-bar
+
+			.btn.form__btn-result Показать резюме
